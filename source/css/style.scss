@@ -1,0 +1,111 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 60px;
+  width: 100%;
+}
+
+#logo {
+  width: 100px;
+  height: 60px;
+}
+
+#poe {
+  max-width: 544px;
+  height: 80%;
+  margin: auto;
+  display: flex;
+}
+
+.writer {
+  background-color: #3f4444;
+  border: 2px solid blue;
+  &__textarea {
+    width: 520px;
+    margin-bottom: 1rem;
+    resize: none;
+    height: min-content;
+    min-height: 400px;
+    padding: 14px 1rem 1rem;
+  }
+
+  &__help-rhyme {
+    padding-top:16px;
+    margin-right:10px;
+    max-width: 24px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    columns: 1;
+
+    &__single {
+      text-align:center;
+      height: 24px;
+      width: 24px;
+      border: 1px solid darkgray;
+      margin:2px 0px;
+      border-radius: 6px;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      -ms-border-radius: 6px;
+      -o-border-radius: 6px;
+    }
+  }
+}
+
+.container-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  button {
+    border: none;
+    border-radius: 6px;
+    -webkit-border-radius: 6p;
+    -moz-border-radius: 6p;
+    -ms-border-radius: 6p;
+    -o-border-radius: 6p;
+  }
+
+  &__submit-button {
+    width: 200px;
+    color: rgb(112, 109, 109);
+    font-size: 24px;
+  }
+}
+
+/* Page insertPoem */
+.form {
+width:520px;
+margin:auto;
+
+input {
+  margin:8px 0;
+}
+  &__info {
+    padding:8px;
+    border:1px solid black;
+    border-bottom:none;
+  }
+  &__style {
+    padding:8px;
+    border:1px solid black;
+    border-bottom:none;
+  }
+  &__submit {
+    padding: 4px;
+    margin:auto;
+    border:1px solid black;
+
+    input {
+      display:flex;
+      margin:auto;
+    }
+  }
+}
